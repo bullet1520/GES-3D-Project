@@ -7,19 +7,19 @@ public class GenericInteractiveObject : MonoBehaviour, IActivatable
     public void DoActivate()
     {
         throw new System.NotImplementedException();
-
+        Debug.Log(transform.name + " was activated");
     }
 
+    //private void Start()
+    //{
+    //    DoActivate();
 
-	// Use this for initialization
-	void Start ()
-    {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
-	}
+    //}
+
+
+
+
+
+
+
 }
