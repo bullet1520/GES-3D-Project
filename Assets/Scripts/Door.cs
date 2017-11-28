@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Door : MonoBehaviour, IActivatable
 {
+
+    private Animator animator;
+
+
     public void DoActivate()
     {
         throw new System.NotImplementedException();
+        animator.SetBool("shouldOpen", true);
     }
 
 
@@ -14,12 +19,6 @@ public class Door : MonoBehaviour, IActivatable
 	// Use this for initialization
 	void Start ()
     {
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-		
+        animator.GetComponent<Animator>();
 	}
 }
