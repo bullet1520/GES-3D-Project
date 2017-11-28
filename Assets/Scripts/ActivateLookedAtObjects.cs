@@ -5,6 +5,12 @@ using UnityEngine;
 public class ActivateLookedAtObjects : MonoBehaviour
 {
 
+    public void DOActivate()
+    {
+        throw new System.NotImplementedException();
+    }
+
+
     [SerializeField]
     private float maxActivateDisctance = 4.0f;
 
@@ -31,7 +37,7 @@ public class ActivateLookedAtObjects : MonoBehaviour
 
             if (objectLookedAt != null && Input.GetButtonDown("Activate"))
             {
-                objectLookedAt.doActivate();
+                objectLookedAt.DoActivate();
 
             }
 
