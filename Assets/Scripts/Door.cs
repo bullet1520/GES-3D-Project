@@ -7,6 +7,16 @@ public class Door : MonoBehaviour, IActivatable
 
     private Animator animator;
 
+    [SerializeField]
+    private string NameText;
+
+    public string nameText
+    {
+        get
+        {
+            return NameText;
+        }
+    }
 
     public void DoActivate()
     {
