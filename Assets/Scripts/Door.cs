@@ -29,6 +29,6 @@ public class Door : MonoBehaviour, IActivatable
 	// Use this for initialization
 	void Start ()
     {
-        animator.GetComponent<Animator>();
+        //animator.GetComponent<Animator>();
 	}
 }
